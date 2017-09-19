@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flat UI</title>
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/jquery-ui.css">
+     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head> 
+  <body>
+      <div class="container">
+          <form action="" class="input-group">
+               <input type="text" class="form-control" id="bdate" data-date-end-date="0d"> 
+               <p>Date: <input type="text" id="datepicker"></p> 
+              <!-- <div id="calendar"></div>
+              <input type="text" id="year"> -->
+              <!-- <input id="dataTrasmissioneAde" class="hasDatepicker" type="text" onchange="aggiornamentoDateAg(this.value)" readonly="readonly" value="" maxlength="10" name="dataTrasmissioneAde">
+               <select name="gender" id="gender" class="form-group input-text"> 
+                  <option value="m">Male</option>
+                  <option value="f">Female</option>
+              </select> -->
+          </form>
+      </div>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/bootstrap-datepicker.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+  $( function() {
+    $( "#datepicker" ).datepicker({
+        format:'yyyy',
+        minViewMode:"years",
+        maxViewMode:"years",
+        autoclose:true,
+        viewMode:"years",
+        inline:false,
+        onSelect: function(dateText, inst){
+            var date = new Date(dateText).getFullYear();
+           //console.log(date);
+             //document.getElementById('datepicker').innerHTML(date);
+        }
+    });
+  } );
+</script>
+<script>
+    $('#bdate').datepicker({
+        minViewMode:2,
+        maxViewMode:2,
+        autoclose:true,
+    });
+</script>
+  </body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flat UI</title>
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+  </head> 
+  <body>
+      <div class="container">
+          <h3 id="hd" class="form">Auto Insurance Quote Intake Form</h3>
+          <form method="post" action="postsubmission.php">
+          <div class="row" id="first">
+              <div class="col-md-4">
+                      <h4 class="name" >Model</h4>
+                      <div class="input-group">
+                          <select name="model" id="model" class="form-group input-text">
+                              <option value="">Select Model</option>
+                          </select>
+                      </div>
+              </div>
+              <div class="col-md-4">
+                    <h4 class="name" >Make</h4>
+                  <div class="input-group">
+                    <input type="text" placeholder="Make" class="form-group input-text">
+                </div>
+              </div>
+              <div class="col-md-4">
+                      <h4 class="name" id="year" >Year</h4>
+                  <div class="input-group">
+                      <input input type="text" id="datepicker" class="form-group input-text">
+                  </div>
+              </div>
+          </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="name">First Name</h4>
+                    <div class="input-group name-f">
+                    <input type="text" class="form-group input-text">    
+                    </div><br>
+                    <h4 class="name">Last Name</h4>
+                    <div class="input-group name-l">
+                    <input type="text" class="form-group input-text">
+                    </div>
+                </div>
+                <div class="col-md-6" id="address">
+                    <h4 class="add">Address</h4>
+                    <div class="input-group address">
+                        <textarea cols="100" rows="5" class="input-text"></textarea>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 class="name">City</h4>
+                    <div class="input-group">
+                        <input type="text" placeholder="City" class="form-group input-text">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="name" id="state">State</h4>
+                    <div class="input-group">
+                        <input type="text" placeholder="State" class="form-group input-text">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="name">Zip</h4>
+                    <div class="input-group">
+                        <input type="text" placeholder="Zipcode" id="zip" class="form-group input-text">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 class="name">Tel</h4>
+                    <div class="input-group">
+                        <input type="text" placeholder="Telephone" class="form-group input-text">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="name">Cell</h4>
+                    <div class="input-group">
+                        <input type="text" placeholder="Cell Number" class="form-group input-text">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="name">Email</h4>
+                    <div class="input-group">
+                        <input type="email" placeholder="Email" class="form-group input-text">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="name">Date of Birth</h4>
+                    <div class="input-group">
+                        <input type="date" class="form-group input-text">
+                    </div><br>
+                    <h4 class="name">Occupation</h4>
+                    <div class="input-group">
+                        <input type="text" class="form-group input-text occupation">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="name">Gender</h4>
+                    <div class="input-group">
+                        <select name="gender" id="gender" class="form-group input-text">
+                            <option value="">Gender</option>
+                            <option value="m">Male</option>
+                            <option value="f">Female</option>
+                        </select>
+                    </div><br>
+                    <h4 class="name">Education</h4>
+                    <div class="input-group">
+                        <select name="education" id="edu" class="form-group input-text">
+                            <option value="">Education</option>
+                            <option value="hs">High School</option>
+                            <option value="gd">Graduation</option>
+                            <option value="pg">Post Graduation</option>
+                            <option value="doc">PHD</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="name">Status</h4>
+                    <div class="input-group">
+                        <select name="status" id="status" class="form-group input-text">
+                            <option value="">Status</option>
+                            <option value="s">Single</option>
+                            <option value="md">Married</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="name" id="home">Home</h4>
+                    <div class="radio-btn input-group">
+                        <input type="radio" id="test1" name="radio-group">
+                        <label for="test1" id="own">Own</label>
+                        <input type="radio" id="test2" name="radio-group">
+                        <label for="test2">Rent</label>
+                </div>
+            </div>
+            </div>
+            <hr>
+            <div class="row que-row">
+                <div class="col-md-6">
+                    <p class="ques">Is this person a full-time student with a GPA 3.0 or better?</p>
+                     <label class="switch"  data-on="ON" data-off="OFF">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <p class="ques">Do You Want to add additional drivers to this request? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                     <label class="switch"  data-on="ON" data-off="OFF">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <p class="ques">Do you want to add additional vechiles to this request? &nbsp;&nbsp;&nbsp;&nbsp;</p>
+                     <label class="switch"  data-on="ON" data-off="OFF">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="col-md-6 right">
+                    <p class="ques">Have you any tickets,accidents,or claims in the past 3 years?</p>
+                     <label class="switch"  data-on="ON" data-off="OFF">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <br><p class="ques last">Have you had insurance in past 30 days?</p>
+                     <label class="switch"  data-on="ON" data-off="OFF">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">&nbsp;</div>
+            <div class="input-group">
+                <div class="good-button submmit">
+                     <button class="btn  btn-good" name="submmit">Submmit</button>
+                </div>
+            </div>
+            </div>
+            </div>
+          </form>
+      </div>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/bootstrap-datepicker.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/script.js"></script>
+  </body>
+</html>

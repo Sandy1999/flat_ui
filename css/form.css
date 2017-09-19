@@ -1,0 +1,29 @@
+body{
+    font-family: 'Open Sans';
+}
+.container{
+    background: #ffffff ;   
+}
+.que-row{
+    color:  #5d4037;
+}
+#state{
+    margin-left: -10px;
+}
+h4{
+    font-size: 15px; color: #888888;
+}
+#hd{
+    padding-top: 10px; padding-bottom:10px;  font-weight: 500; background: #1A237E; color: #fafafa;
+}
+.input-text:focus{
+    outline: none;
+}
+#gender{
+    max-width: 248px;
+}
+#address{margin-left: -65px}
+#status{max-width: 242px;}
+#home{padding-right: 43px;}
+#own{padding-right: 50px;}
+#first{padding-top: 15px;}
